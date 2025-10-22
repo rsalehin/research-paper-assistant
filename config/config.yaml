@@ -1,0 +1,28 @@
+# Application Configuration
+
+app:
+  name: "Research Paper Assistant"
+  version: "0.1.0"
+
+arxiv:
+  max_results: 100
+  categories:
+    - "cs.AI"
+    - "cs.LG"
+    - "cs.CL"
+  sort_by: "submittedDate"
+
+elasticsearch:
+  index_name: "arxiv_papers"
+  cloud_id: ""  # Will be set via environment variable
+  
+google_cloud:
+  project_id: ""  # Will be set via environment variable
+  location: "us-central1"
+  embedding_model: "textembedding-gecko@003"
+  gemini_model: "gemini-1.5-pro"
+
+search:
+  top_k: 20
+  bm25_weight: 0.5
+  vector_weight: 0.5

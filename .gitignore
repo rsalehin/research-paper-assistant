@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Data files (too large for Git)
+data/raw/*.json
+data/processed/*.json
+data/embeddings/*.npy
+*.csv
+*.parquet
+
+# Environment variables
+.env
+config/.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Google Cloud credentials
+*.json
+!config/config.example.json
